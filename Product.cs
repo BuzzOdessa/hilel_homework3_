@@ -1,12 +1,13 @@
 ﻿namespace HomeWork_3;
-internal class Product : IConsoleOutput
+internal class Product
 {
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public string Category { get; set; } = string.Empty;
 
-    public void PrintInfo(string msg)
+    public override string ToString()
     {
-        Console.WriteLine($"{msg} Категорія: {Category} Продукт: {Name} Ціна: {Price} ");
+        return $"Категорія: {Category} Продукт: {Name} Ціна: {Price}";
     }
+
 }

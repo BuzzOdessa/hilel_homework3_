@@ -1,12 +1,12 @@
 ﻿namespace HomeWork_3;
-internal class Student : IConsoleOutput
+internal class Student
 {
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
     public int Grade { get; set; }
 
-    public void PrintInfo(string msg)
+    public override string ToString()
     {
-        Console.WriteLine($"{msg} {LastName} {FirstName}, оцінка: {Grade}");
+        return $"{LastName} {FirstName}, оцінка: {Grade}";
     }
 }

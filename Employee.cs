@@ -1,5 +1,5 @@
 ﻿namespace HomeWork_3;
-internal class Employee : IConsoleOutput
+internal class Employee
 {
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
@@ -7,8 +7,8 @@ internal class Employee : IConsoleOutput
     public DateTime BirthDate { get; set; }
     public DateTime EmploymentDate { get; set; }
 
-    public void PrintInfo(string msg)
+    public override string ToString()
     {
-        Console.WriteLine($"{msg} {LastName} {FirstName}, дата працевлаштування: {EmploymentDate:dd.MM.yyyy}");
+        return $"{LastName} {FirstName}, дата працевлаштування: {EmploymentDate:dd.MM.yyyy}";
     }
 }
