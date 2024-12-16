@@ -7,7 +7,7 @@ internal class Employee : IConsoleOutput
     public DateTime BirthDate { get; set; }
     public DateTime EmploymentDate { get; set; }
 
-
+// Test
     public void PrintInfo(string msg)
     {
         Console.WriteLine($"{msg} {LastName} {FirstName}, дата працевлаштування: {EmploymentDate:dd.MM.yyyy}");
