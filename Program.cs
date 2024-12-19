@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using HomeWork_3;
 
+
 #region Вызов  решения
 Console.OutputEncoding = Encoding.UTF8; // Інакше українське "і" не виводилось.
 Console.Title = "Домашка №3";
